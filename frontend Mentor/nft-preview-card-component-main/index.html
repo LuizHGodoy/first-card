@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    /* Font */
+  @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+  /* Design */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: #0D1A2D;
+  }
+
+  body {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+  }
+
+  .main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1 {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    padding: 1rem  1rem 1rem 1rem;
+  }
+
+  .cardzin:hover{
+    box-shadow: #0C1729;
+  }
+
+  .cardzin {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 10%;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardzin_item {
+    display: flex;
+    padding: 1rem;
+  }
+
+  @media (min-width: 40rem) {
+    .cardzin_item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 56rem) {
+    .cardzin_item {
+      width: 33.3333%;
+    }
+  }
+
+  .card {
+    background-color: #15273F;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .card_image {
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  }
+
+  .card_content {
+    padding: 1rem;
+    background: #15273f;
+  }
+
+  .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+
+  .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+  .made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .teste {
+   float: right; 
+  }
+
+  .font-color{
+    color:#6E83A7
+  }
+
+  hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #5d6177;
+  margin: 1em 0;
+  padding: 0;
+  }
+
+  .img-teste {
+    max-width: 75px;
+  }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <ul class="cardzin">
+      <li class="cardzin_item">
+        <div class="card">
+          <div class="card_image"><img src="/home/luizgenesis/Documentos/vscode/home/luizgenesis/Documentos/vscode/frontend Mentor/nft-preview-card/images/image-equilibrium.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">Equilibrium #3429</h2>
+            <p class="card_text font-color">Our Equilibrium collection promotes balance and calm.</p>
+            <div>
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg> 
+              <a style="color: #30E4E8;"> 0.041 ETH</a>
+              <div class="teste">
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+              <a class="font-color"> 3 Days left</a></div>
+            </div><hr>
+            <div>
+              <img class="img-teste" src="/home/luizgenesis/Documentos/vscode/frontend Mentor/nft-preview-card/images/image-avatar.png">
+              <a> Creation of Luizinho insano</a>
+            </div>
+          </div>
+        </div>
+      </li>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">relampago marquinhos</a>. 
+    Coded by <a href="#">luizinho insano</a>.
+  </div> -->
+</body>
+</html>
