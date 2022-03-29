@@ -1,0 +1,136 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+/* Design */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+html {
+background-color: #0D1A2D;
+}
+
+body {
+color: #ffffff;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0;
+padding: 1rem;
+}
+
+.main{
+max-width: 1200px;
+margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+height: auto;
+max-width: 100%;
+vertical-align: middle;
+padding: 1rem  1rem 1rem 1rem;
+}
+
+.cardzin:hover{
+box-shadow: #0C1729;
+}
+
+.cardzin {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin-top: 10%;
+padding: 0;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.cardzin_item {
+display: flex;
+padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+.cardzin_item {
+  width: 50%;
+}
+}
+
+@media (min-width: 56rem) {
+.cardzin_item {
+  width: 33.3333%;
+}
+}
+
+.card {
+background-color: #15273F;
+border-radius: 1rem;
+box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+.card_image {
+padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.card_content {
+padding: 1rem;
+background: #15273f;
+}
+
+.card_title {
+color: #ffffff;
+font-size: 1.1rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: capitalize;
+margin: 0px;
+}
+
+.card_text {
+color: #ffffff;
+font-size: 0.875rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;    
+font-weight: 400;
+}
+.made_by{
+font-weight: 400;
+font-size: 13px;
+margin-top: 35px;
+text-align: center;
+}
+
+.teste {
+float: right; 
+}
+
+.font-color{
+color:#6E83A7
+}
+
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #5d6177;
+margin: 1em 0;
+padding: 0;
+}
+
+.img-teste {
+max-width: 75px;
+}
